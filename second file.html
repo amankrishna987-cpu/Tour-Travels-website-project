@@ -1,0 +1,103 @@
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tour Booking Form</title>
+
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        .container{
+            width: 500px;
+            margin: 30px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px gray;
+        }
+
+        h2{
+            text-align: center;
+            color: #0066cc;
+        }
+
+        label{
+            font-weight: bold;
+        }
+
+        input, select, textarea{
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+        }
+
+        input[type="submit"]{
+            background-color: #0066cc;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        input[type="submit"]:hover{
+            background-color: #004c99;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h2>Tour Booking Form</h2>
+
+    <form>
+
+        <label>Full Name</label>
+        <input type="text" placeholder="Enter your name" required>
+
+        <label>Email</label>
+        <input type="email" placeholder="Enter your email" required>
+
+        <label>Mobile Number</label>
+        <input type="tel" placeholder="Enter mobile number" required>
+
+        <label>Select Package</label>
+        <select required>
+            <option value="">Choose Package</option>
+            <option>Nalanda Heritage Tour - Rs1500</option>
+            <option>Rajgir Spiritual Tour - Rs1800</option>
+            <option>Nalanda + Rajgir Combo - Rs3000</option>
+        </select>
+
+        <label>Number of Travelers</label>
+        <input type="number" min="1" required>
+
+        <label>Travel Date</label>
+        <input type="date" required>
+
+        <label>Payment Method</label>
+        <select required>
+            <option value="">Select Payment Method</option>
+            <option>UPI</option>
+            <option>Credit Card</option>
+            <option>Debit Card</option>
+            <option>Net Banking</option>
+        </select>
+
+        <label>Special Requests</label>
+        <textarea rows="4"></textarea>
+
+        <input type="submit" value="Book Now">
+
+    </form>
+
+</div>
+
+</body>
+</html>
+```
